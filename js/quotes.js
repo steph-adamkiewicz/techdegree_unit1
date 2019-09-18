@@ -1,9 +1,7 @@
 let quotes = [
   {
     quote: "Take the first step in faith. You don't have to see the whole staircase, just take the first step.",
-    source: 'Martin Luther King Jr.',
-    citation: ,
-    year:
+    source: 'Martin Luther King Jr.'
   },
   {
     quote: "I do not wish you much happiness—it would bore you; I do not wish you trouble either; but, following the people’s philosophy, I will simply repeat: ‘Live more,’ and try somehow not to be too bored; this useless wish I am adding on my own.",
@@ -14,7 +12,6 @@ let quotes = [
   {
     quote: "The only difference between a madman and myself is that I am not mad.",
     source: "Salvidor Dali",
-    citation: ,
     year: 1942
   },
   {
@@ -32,8 +29,6 @@ let quotes = [
   {
     quote: "Every man is born as many men and dies as a single one.",
     source: "Martin Heidegger",
-    citation: ,
-    year:
   },
   {
     quote: "He was going to live forever, or die in the attempt.",
@@ -60,5 +55,5 @@ let quotes = [
     year: 1973
   }
 ]
-
+//export {quotes}
 console.log(quotes)

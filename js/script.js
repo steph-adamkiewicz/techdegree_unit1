@@ -4,6 +4,7 @@ project 1 - A Random Quote Generator
 ******************************************/
 
 // Study guide for this project - https://drive.google.com/file/d/1s5grutGuQFwJcQP8bFwEI69Q8FCkGdDk/view?usp=sharing
+
 console.log(quotes)
 
 //returns a random quote object from the quotes array
