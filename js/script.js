@@ -5,12 +5,10 @@ project 1 - A Random Quote Generator
 
 // Study guide for this project - https://drive.google.com/file/d/1s5grutGuQFwJcQP8bFwEI69Q8FCkGdDk/view?usp=sharing
 
-console.log(quotes)
-
 //returns a random quote object from the quotes array
 function getRandomQuote () {
   let numOfQuotes = quotes.length
-  let rando = Math.floor(Math.random() * numOfQuotes) + 1
+  let rando = Math.floor(Math.random() * numOfQuotes)
   return quotes[rando]
 }
 /***
@@ -19,7 +17,28 @@ function getRandomQuote () {
    - Cse the random number to `return` a random quote object from the `quotes` array.
 ***/
 
+//formats the quote and outputs to the webpage
+function printQuote () {
+  let quote = getRandomQuote ()
+  console.log(quote)
+  let html = '<p class="quote">' + quote.quote + '</p>'
+  html += '<p class="source">' + quote.source 
+  if (quote.citation) {
+    html += '<span class="citation">' + quote.citation + '</span>'
+  }
 
+  if (quote.year) {
+    html += '<span class="year">' + quote.year + '</span>'
+  }
+  html += '</p>'
+  console.log(html)
+  return html
+
+  /*
+  <p class="quote">Every great developer you know got there by solving problems they were unqualified to solve until they actually did it.</p>
+  <p class="source">Patrick McKenzie<span class="citation">Twitter</span><span class="year">2016</span></p>
+  */
+}
 
 
 /***
@@ -44,7 +63,7 @@ function getRandomQuote () {
   function. So do not make any changes to the line of code below this
   comment.
 ***/
-
+printQuote()
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
 

@@ -55,5 +55,4 @@ let quotes = [
     year: 1973
   }
 ]
-//export {quotes}
-console.log(quotes)
+
